@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Helpdesk | Malla Reddy University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-box">MRU</div>
+                <div>
+                    <h1>Malla Reddy University</h1>
+                    <p>Student Helpdesk & Circular Portal</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#notices">Notices</a>
+                <a href="#resources">Resources</a>
+                <a href="#enquiry">Enquiry</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-label">STUDENT INFORMATION PORTAL</p>
+
+                <h2>Your University.
+                    <span>Your Information.</span>
+                </h2>
+
+                <p>
+                    Stay updated with academic circulars, examination notifications,
+                    campus announcements and essential student resources.
+                </p>
+
+                <a href="#notices" class="hero-button">Explore Notices</a>
+            </div>
+        </section>
+
+        <!-- Notices Section -->
+        <section class="section" id="notices">
+
+            <div class="section-heading">
+                <p class="section-label">STAY INFORMED</p>
+                <h2>Latest Notices</h2>
+                <p>Important academic and campus updates for students.</p>
+            </div>
+
+            <div class="notice-container">
+
+                <article class="notice-card">
+                    <div class="notice-tag exam">Examination</div>
+                    <h3>Examination Notification</h3>
+                    <p>
+                        Students are advised to regularly check examination
+                        schedules and instructions.
+                    </p>
+                    <p class="notice-date">Academic Update</p>
+                </article>
+
+                <article class="notice-card">
+                    <div class="notice-tag academic">Academic</div>
+                    <h3>Academic Circular</h3>
+                    <p>
+                        Important academic announcements and updates are
+                        available for students.
+                    </p>
+                    <p class="notice-date">University Announcement</p>
+                </article>
+
+                <article class="notice-card">
+                    <div class="notice-tag campus">Campus</div>
+                    <h3>Campus Announcement</h3>
+                    <p>
+                        Students can stay informed about university events,
+                        activities and general announcements.
+                    </p>
+                    <p class="notice-date">Campus Update</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Campus Image Section -->
+        <section class="campus-section">
+            <div class="campus-image">
+                <img
+                    src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80"
+                    alt="University campus building">
+            </div>
+
+            <div class="campus-content">
+                <p class="section-label">CAMPUS INFORMATION</p>
+                <h2>Stay Connected With Your Campus</h2>
+
+                <p>
+                    Access essential university information and stay connected
+                    with academic activities, student services and campus updates.
+                </p>
+
+                <a href="#resources" class="secondary-button">
+                    View Resources
+                </a>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="section" id="resources">
+
+            <div class="section-heading">
+                <p class="section-label">QUICK ACCESS</p>
+                <h2>Student Resources</h2>
+                <p>Access useful information and sample student documents.</p>
+            </div>
+
+            <div class="resource-container">
+
+                <div class="resource-card">
+                    <div class="resource-icon">📅</div>
+                    <h3>Sample Timetable</h3>
+                    <p>Download a sample student timetable.</p>
+                    <button class="download-button"
+                            data-download="timetable">
+                        Download
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📄</div>
+                    <h3>Student Application</h3>
+                    <p>Download a sample student application document.</p>
+                    <button class="download-button"
+                            data-download="application">
+                        Download
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>Academic Guidelines</h3>
+                    <p>Download sample academic guidelines.</p>
+                    <button class="download-button"
+                            data-download="guidelines">
+                        Download
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-section" id="enquiry">
+
+            <div class="enquiry-container">
+
+                <div class="enquiry-info">
+                    <p class="section-label">STUDENT SUPPORT</p>
+                    <h2>Need Assistance?</h2>
+
+                    <p>
+                        Submit your enquiry through the form. Provide the
+                        necessary information so your request can be clearly
+                        understood.
+                    </p>
+
+                    <div class="support-item">
+                        <h3>Academic Queries</h3>
+                        <p>For academic information and clarification.</p>
+                    </div>
+
+                    <div class="support-item">
+                        <h3>Examination Queries</h3>
+                        <p>For examination-related information.</p>
+                    </div>
+
+                    <div class="support-item">
+                        <h3>General Support</h3>
+                        <p>For general student enquiries.</p>
+                    </div>
+                </div>
+
+                <form id="enquiryForm">
+
+                    <h2>Student Enquiry Form</h2>
+
+                    <div class="form-group">
+                        <label for="studentName">Full Name</label>
+                        <input type="text"
+                               id="studentName"
+                               name="studentName"
+                               placeholder="Enter your full name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rollNumber">Roll Number</label>
+                        <input type="text"
+                               id="rollNumber"
+                               name="rollNumber"
+                               placeholder="Enter your roll number"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel"
+                               id="mobile"
+                               name="mobile"
+                               placeholder="Enter your mobile number"
+                               pattern="[0-9]{10}"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiryType">Enquiry Category</label>
+
+                        <select id="enquiryType"
+                                name="enquiryType"
+                                required>
+
+                            <option value="">Select a category</option>
+                            <option value="Academic">Academic</option>
+                            <option value="Examination">Examination</option>
+                            <option value="Campus">Campus</option>
+                            <option value="General">General</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Describe your enquiry..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Submit Enquiry
+                    </button>
+
+                    <p id="formMessage" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div>
+                <h2>Malla Reddy University</h2>
+                <p>Student Helpdesk & Circular Portal</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#notices">Notices</a>
+                <a href="#resources">Resources</a>
+                <a href="#enquiry">Enquiry</a>
+            </div>
+
+            <div>
+                <h3>Helpdesk</h3>
+                <p>Student Support Portal</p>
+                <p>Academic & General Enquiries</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Helpdesk Portal | Malla Reddy University</p>
+            <p>Academic Case Study Project</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
